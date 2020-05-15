@@ -1,0 +1,8 @@
+<div class="container">
+  {{childName}}
+
+  <div *ngFor="let oneUser of users">
+    <app-user-display [user]="oneUser" (childEvent)="onClickHandle($event)" ></app-user-display>
+  </div>
+
+</div>

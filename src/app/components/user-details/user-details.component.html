@@ -1,0 +1,23 @@
+
+<div class="card mt-5">
+  <div class="card-header">
+    {{user.name}} - {{user.id}}
+  </div>
+  <div class="card-body">
+    <h3>{{user.email}}</h3>
+    <h3>{{user.website}}</h3>
+    <h3>{{user.phone}}</h3>
+  </div>
+</div>
+<button routerLink="/users" class="btn btn-dark">Back</button>
+<hr>
+
+<button (click)="onClickChildA()"  class="btn btn-dark">child a</button>
+<button (click)="onClickChildB()"  class="btn btn-dark">child b</button>
+
+<hr>
+
+<router-outlet></router-outlet>
+
+
+multer
