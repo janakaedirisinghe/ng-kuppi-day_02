@@ -1,19 +1,17 @@
 
 
-<div class="card mt-5">
+<div class="card mt-5 ">
   <div class="card-header">
-    {{user.name}} - {{user.id}}
+    <h3>{{user.name}} - {{user.username}}</h3>
   </div>
   <div class="card-body">
-    <h3>{{user.email}}</h3>
-    <h3>{{user.website}}</h3>
-    <h3>{{user.phone}}</h3>
+    <h6>Name : {{user.email}}</h6>
+    <h6>Website : {{user.website}}</h6>
+    <h6> Phone : {{user.phone}}</h6>
   </div>
-  <div class="footer">
-    <button (click)="onClick()" class="btn btn-primary">click</button>
-
-    <button (click)="onClickView()" class="btn btn-primary">view</button>
-
+  <div class="card-footer">
+    <button (click)="onClick()" class="btn btn-success mr-3">click to send name</button>
+    <button (click)="onClickView()" class="btn btn-warning">view user</button>
   </div>
 </div>
 

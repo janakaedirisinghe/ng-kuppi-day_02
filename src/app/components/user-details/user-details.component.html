@@ -1,23 +1,25 @@
 
+<h2 class="mt-5">User Details</h2>
+
 <div class="card mt-5">
   <div class="card-header">
-    {{user.name}} - {{user.id}}
+    <h3>{{user.name}} - {{user.username}}</h3>
   </div>
   <div class="card-body">
-    <h3>{{user.email}}</h3>
-    <h3>{{user.website}}</h3>
-    <h3>{{user.phone}}</h3>
+    <h6>Email: {{user.email}}</h6>
+    <h6>Website :{{user.website}}</h6>
+    <h6>Phone: {{user.phone}}</h6>
+    <hr>
+    <h6>Address: {{user.address.street}}, {{user.address.city}}</h6>
+    <h6>Company: {{user.company.name}}</h6>
   </div>
 </div>
-<button routerLink="/users" class="btn btn-dark">Back</button>
+<button routerLink="/users" class="btn btn-dark mt-3">Back to users</button>
 <hr>
 
-<button (click)="onClickChildA()"  class="btn btn-dark">child a</button>
-<button (click)="onClickChildB()"  class="btn btn-dark">child b</button>
-
+<div class="btn-group">
+  <button (click)="onClickChildA()"  class="btn btn-secondary">child a</button>
+  <button (click)="onClickChildB()"  class="btn btn-secondary">child b</button>
+</div>
 <hr>
-
 <router-outlet></router-outlet>
-
-
-multer

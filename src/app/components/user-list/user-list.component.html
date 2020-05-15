@@ -1,8 +1,7 @@
-<div class="container">
-  {{childName}}
+
+  <h2>From child component : {{childName}}</h2>
 
   <div *ngFor="let oneUser of users">
     <app-user-display [user]="oneUser" (childEvent)="onClickHandle($event)" ></app-user-display>
   </div>
 
-</div>

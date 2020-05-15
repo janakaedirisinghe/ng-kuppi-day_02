@@ -247,6 +247,8 @@ export class UserService {
   getOneUser(id: number) {
     return this.users.filter(user => user.id === id);
 
+    //same as arrow function
+
     // return this.users.filter(
     //   function (user) {
     //     return user.id === id;
